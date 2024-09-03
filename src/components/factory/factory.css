@@ -1,0 +1,19 @@
+li {
+  color: rgb(61, 103, 18, 0.8);
+}
+
+h4 {
+  color: rgb(61, 103, 18, 0.8);
+}
+
+.mainFactoryContainer {
+  padding-left: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.factoryContentContainer {
+  margin-top: 80px;
+}

@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, green, orange);
+  background-clip: text;
+  color: transparent;
+}
+
+.mainHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  width: 100%;
+}
+
+.backAndPageContainer {
+  position: absolute;
+  left: 0px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
