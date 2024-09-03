@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machinery Purchase - Goldfield Zambia Farm Institute</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .button-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .button {
+            background-color: #008000;
+            color: white;
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #004d00;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .machinery-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .machinery-list li {
+            background-color: #e0f7fa;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .machinery-list li h3 {
+            margin: 0;
+            color: #00796b;
+        }
+        .machinery-list li p {
+            margin: 5px 0 10px 0;
+            font-size: 14px;
+        }
+        .machinery-list li button {
+            background-color: #004d00;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Machinery Purchase</h1>
+        </div>
+        
+        <div class="button-container">
+            <button class="button" onclick="scrollToSection('machinery')">View Machinery</button>
+            <button class="button" onclick="scrollToSection('order')">Press Order</button>
+            <button class="button" onclick="scrollToSection('help')">Need Help?</button>
+        </div>
+
+        <!-- View Machinery Section -->
+        <div id="machinery" class="section">
+            <h2>View Machinery</h2>
+            <p>Select the type and size of machinery you are interested in:</p>
+            <ul class="machinery-list">
+                <li>
+                    <h3>Tractors</h3>
+                    <p>Available sizes: Small, Medium, Large</p>
+                    <button onclick="viewDetails('Tractors')">More Information / Edit</button>
+                </li>
+                <li>
+                    <h3>Harvesters</h3>
+                    <p>Available sizes: Small, Medium, Large</p>
+                    <button onclick="viewDetails('Harvesters')">More Information / Edit</button>
+                </li>
+                <li>
+                    <h3>Ploughs</h3>
+                    <p>Available sizes: Small, Medium, Large</p>
+                    <button onclick="viewDetails('Ploughs')">More Information / Edit</button>
+                </li>
+                <li>
+                    <h3>Seeders</h3>
+                    <p>Available sizes: Small, Medium, Large</p>
+                    <button onclick="viewDetails('Seeders')">More Information / Edit</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Press Order Section -->
+        <div id="order" class="section">
+            <h2>Press Order</h2>
+            <p>To place an order for any machinery, please follow these steps:</p>
+            <ol>
+                <li>Select the machinery type and size from the list above.</li>
+                <li>Click on "More Information / Edit" to review and customize your order.</li>
+                <li>Click the "Order Now" button that will appear after reviewing.</li>
+                <li>Fill in your contact details and delivery information.</li>
+                <li>Submit your order and wait for a confirmation email with payment instructions.</li>
+            </ol>
+        </div>
+
+        <!-- Help Section -->
+        <div id="help" class="section">
+            <h2>Need Help?</h2>
+            <p>If you need assistance with your order, feel free to reach out:</p>
+            <p><strong>Email:</strong> support@goldfieldzambia.com</p>
+            <p><strong>Phone:</strong> +260777982988</p>
+            <p><strong>Office Hours:</strong> Monday to Friday, 8:00 AM - 5:00 PM</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function viewDetails(machineryType) {
+            alert("You are viewing details for " + machineryType + ". This is where you can edit the details and customize your order.");
+            // Additional logic for editing and viewing more details can be added here.
+        }
+    </script>
+</body>
+</html>

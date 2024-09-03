@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldfield Zambia Farm - Supplier Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .dashboard {
+            text-align: center;
+        }
+        .dashboard h1 {
+            color: #333;
+        }
+        .supplies {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .supplies button {
+            background-color: #17a2b8;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .supplies button:hover {
+            background-color: #138496;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Supplier Dashboard - Provide Supplies</h1>
+        <div class="supplies">
+            <button onclick="location.href='supply_fertilizer.html'">Fertilizer</button>
+            <button onclick="location.href='supply_chemicals.html'">Chemicals</button>
+            <button onclick="location.href='supply_tools.html'">Tools</button>
+            <button onclick="location.href='supply_others.html'">Other Utilities</button>
+        </div>
+    </div>
+</body>
+</html>

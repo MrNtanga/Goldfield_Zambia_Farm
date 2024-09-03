@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldfield Zambia Farm - Customer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .dashboard {
+            text-align: center;
+        }
+        .dashboard h1 {
+            color: #333;
+        }
+        .products {
+            margin-top: 20px;
+        }
+        .products button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .products button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Customer Dashboard - Buy Products</h1>
+        <div class="products">
+            <button onclick="location.href='buy_pigs.html'">Pigs (All Stages)</button>
+            <button onclick="location.href='buy_broilers.html'">Broilers and Village Chickens</button>
+            <button onclick="location.href='buy_fish.html'">Fish</button>
+            <button onclick="location.href='buy_avocados.html'">Nursery Plants for Hass Avocados</button>
+            <button onclick="location.href='buy_bananas.html'">Williams Bananas</button>
+            <button onclick="location.href='buy_vegetables.html'">Vegetables</button>
+            <button onclick="location.href='buy_others.html'">Others</button>
+        </div>
+    </div>
+</body>
+</html>
